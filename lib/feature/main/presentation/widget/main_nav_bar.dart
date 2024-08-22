@@ -40,14 +40,9 @@ class MainNavBar extends StatelessWidget {
             ),
             label: "Discover"),
         BottomNavigationBarItem(
-            icon: SvgPicture.asset(
-              "assets/icons/browse_icon.svg",
-              height: 24,
-              width: 24,
-              colorFilter: ColorFilter.mode(
-                selectedIndex == 2 ? Colors.purple : Colors.black,
-                BlendMode.srcIn,
-              ),
+            icon: Icon(
+              Icons.copy,
+              color: selectedIndex == 2 ? Colors.purple : Colors.black,
             ),
             label: "Browse"),
         BottomNavigationBarItem(

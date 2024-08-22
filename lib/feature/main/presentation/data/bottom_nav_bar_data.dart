@@ -4,11 +4,11 @@ import 'package:twitch_clone_app/feature/main/presentation/screen/following_page
 final List<Widget> widgetOptions = <Widget>[
   const FollowingPage(),
   const Text(
-    'Search Page',
+    'Discover Page',
     style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
   ),
   const Text(
-    'Profile Page',
+    'Browse Page',
     style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
   ),
   const Text(
