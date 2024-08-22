@@ -45,9 +45,19 @@ class _FollowingPageState extends State<FollowingPage> {
         SliverToBoxAdapter(
           child: SizedBox(height: 8),
         ),
-        SliverFillRemaining(
-          child: RecommendedChannels(),
+        SliverToBoxAdapter(
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16),
+            child: Text(
+              "Channels Recommended for You",
+              style: TextStyle(
+                fontWeight: FontWeight.w600,
+                fontSize: 18,
+              ),
+            ),
+          ),
         ),
+        RecommendedChannelsSliver(),
       ],
     );
   }
